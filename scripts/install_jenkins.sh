@@ -19,6 +19,6 @@ usermod -aG docker ubuntu
 
 mkdir -p /var/jenkins_home
 chown -R 1000:1000 /var/jenkins_home/
-docker run -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home -d  -e "JENKINS_ADMIN_PASSWORD=${ADMIN_PASSWORD}" --name jenkins jenkins/jenkins:lts
+docker run -p 8080:8080 -p 50000:50000 -v /var/jenkins_home:/var/jenkins_home -d  -e JENKINS_ADMIN_PASSWORD=$ADMIN_PASSWORD --name jenkins jenkins/jenkins:lts
 echo 'Jenkins installed'
 echo "Admin password: $ADMIN_PASSWORD"
