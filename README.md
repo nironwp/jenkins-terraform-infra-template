@@ -40,7 +40,8 @@ Before using this template, you must have the following:
 After the installation is complete there will be something like this in your terminal:
 ```bash
     aws_instance.jenkins_server (remote-exec): Jenkins installed
-    aws_instance.jenkins_server (remote-exec): Admin password: herethepassword
+    aws_instance.jenkins_server (remote-exec): Admin password: 
+    herethepassword
 ```
 
 jenkins_url: here is the url, you access the url, insert the password that appeared just above and you can enjoy your jenkins
