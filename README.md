@@ -37,11 +37,7 @@ Before using this template, you must have the following:
 
 ## Accessing Jenkins
 
-After the installation is complete there will be something like this in your terminal:
+After the installation is complete, enter your ec2 instance panel, connect to the "jenkins_server" instance and run the command 
 ```bash
-    aws_instance.jenkins_server (remote-exec): Jenkins installed
-    aws_instance.jenkins_server (remote-exec): Admin password: 
-    herethepassword
+    cat /var/jenkins_home/secrets/initialAdminPassword
 ```
-
-jenkins_url: here is the url, you access the url, insert the password that appeared just above and you can enjoy your jenkins
